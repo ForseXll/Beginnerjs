@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+</head>
+
+<body>
+    <div class="canvasWrapper">
+        <canvas width="1920" height="1080" id="etch-sketch"></canvas>
+        <div class="controls">
+            <button class="button">Shake!!</button>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+    <style>
+        body {
+            min-height: 100vh;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            background-image: url("./Bunkers.jpg");
+            background-size: cover;
+        }
+
+        canvas {
+            border: 20px solid rgb(76, 167, 24);
+            border-radius: 15px;
+            background-color: white;
+            width: 960px;
+            height: 540px;
+        }
+
+        div.controls {
+            display: grid;
+        }
+
+        button {
+            display: block;
+            max-width: 300px;
+            margin: auto;
+            background-color: teal;
+            border-color: yellowgreen;
+        }
+
+        canvas.button {
+            animation: button 1s linear 1;
+        }
+
+        @keyframes button {
+
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0);
+            }
+
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0, 0);
+            }
+
+            40%,
+            60% {
+                transform: translate3d(4px, 0, 0);
+            }
+        }
+    </style>
+</body>
+
+</html>
