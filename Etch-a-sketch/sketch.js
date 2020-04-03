@@ -10,8 +10,8 @@ const line_length = 20;
 const width = canvas.width;
 const height = canvas.height;
 //random spawn of coordinates
-let x = Math.floor(Math.random() * height);
-let y = Math.floor(Math.random() * width);
+let x = Math.floor(Math.random() * width);
+let y = Math.floor(Math.random() * height);
 
 context.lineCap = "round";
 context.lineJoin = "round"
