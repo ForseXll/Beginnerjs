@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicking</title>
+</head>
+
+<body>
+    <div class="cards">
+        <div class="card" data-description="girl">
+            <img src="./blue.jpg">
+            <h2>Picture of a Girl</h2>
+            <button class="button">More Info</button>
+        </div>
+        <div class="card" data-description="beach">
+            <img src="./Beach (2).jpg">
+            <h2>Great Beach</h2>
+            <button class="button">More Info</button>
+        </div>
+        <div class="card" data-description="Tzuyu">
+            <img src="./gerico-de-los-santos-tzuyu.jpg">
+            <h2>Drawing of a Tzuyu</h2>
+            <button class="button">More Info</button>
+        </div>
+        <div class="card" data-description="Arya">
+            <img src="./GOT Wolf.png">
+            <h2>Game of Thrones Arya</h2>
+            <button class="button">More Info</button>
+        </div>
+    </div>
+
+    <div class="outer-modal">
+        <div class="inner-modal">
+            <p>Picture</p>
+        </div>
+    </div>
+
+    <style>
+        body {
+            background-image: url("./Green.jpg");
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            padding: 2rem;
+            grid-column-gap: 20px;
+        }
+
+        .card {
+            display: grid;
+            background-color: lavender;
+            padding: 2rem;
+            justify-content: center;
+            border-radius: 4px;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card h2 {
+            color: burlywood;
+            align-self: start center;
+            text-align: center;
+        }
+
+        /* button {
+            width: 10rem;
+            height: 2rem;
+            color: cornflowerblue;
+            background-color: bisque;
+        } */
+
+        .button {
+            width: 10rem;
+            height: 2rem;
+            color: cornflowerblue;
+            background-color: bisque;
+            display: grid;
+            align-content: center;
+            align-self: end;
+        }
+
+        .outer-modal img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .outer-modal::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .outer-modal {
+            display: grid;
+            background: hsla(120, 35%, 40%, 0.3);
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.2s;
+            pointer-events: none;
+            overflow: auto;
+        }
+
+        .outer-modal.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .inner-modal {
+            max-width: 500px;
+            min-width: 400px;
+            padding: 2rem;
+            background: whitesmoke;
+            border-radius: 5px;
+        }
+    </style>
+
+    <script src="clicking.js"></script>
+
+</body>
+
+</html>
