@@ -1,0 +1,36 @@
+body {
+    background: url('./apocolypse.jpg');
+}
+.tabs {
+    display: grid;
+    width: min-content;
+}
+button {
+    width: 10rem;
+    height: 2rem;
+    color: rgb(10, 48, 119);
+    background-color: grey;
+    display: grid;
+    align-content: center;
+    align-self: end;
+    cursor: pointer;
+}
+
+[role="tablist"] {
+    display: grid;
+    grid-template-columns: repeat(4, 10rem[col-start]);
+    grid-gap: 10px;
+}
+
+button[aria-selected="true"]
+{
+    background-color: bisque;
+    color: black;
+}
+
+[role="tabpanel"]
+{
+    background-color: bisque;
+    padding: 1rem;
+}
+
