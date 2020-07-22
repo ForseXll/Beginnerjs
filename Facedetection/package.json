@@ -1,0 +1,23 @@
+{
+  "name": "pixelated-face",
+  "version": "1.0.0",
+  "main": "pixelated-face.js",
+  "scripts": {
+    "start": "parcel face.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "default"
+  ],
+  "dependencies": {
+    "browserslist": "^4.13.0",
+    "caniuse-lite": "^1.0.30001104",
+    "parcel": "^2.0.0-nightly.347"
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
