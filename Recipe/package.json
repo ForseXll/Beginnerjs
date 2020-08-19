@@ -1,0 +1,17 @@
+{
+  "name": "puppyrecipe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script-puppy.js",
+  "scripts": {
+    "start": "parcel puppy.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "browserslist": [
+    "last 1 chrome versions"
+  ]
+}
