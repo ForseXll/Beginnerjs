@@ -63,11 +63,12 @@ myDiv.children[1].classList.add('warning');
 myDiv.firstElementChild.remove();
 
 // create a function called generatePlayerCard that takes in three arguments: name, age, and height
-function generatePlayerCard(name, age, height) {
+function generatePlayerCard(name, age, height)
+{
     return `
     <div class="playerCard">
         <h2>${name} — ${age}</h2>
-        <p>They are ${height} and ${age} years old. In Dog years this person would be ${age * 7}. That would be a tall dog!</p>
+        <p>Their height is ${height}cm and are ${age} years old. In Dog years this person would be ${age * 7} years old. That would be a old dog!</p>
         <button class="delete" type="button" >Delete</Button>
     </div>
     `;
@@ -87,8 +88,12 @@ cardDiv.classList.add('cards');
 let cardlist = generatePlayerCard('Ying', 26, 166);
 cardlist += generatePlayerCard('Ilya', 27, 178);
 cardlist += generatePlayerCard('Peggy', 20, 156);
-cardlist += generatePlayerCard('Woops', 23, 160);
-
+cardlist += generatePlayerCard('Aisha', 21, 160);
+cardlist += generatePlayerCard('Jennie', 16, 90);
+cardlist += generatePlayerCard('Kenny', 23, 167);
+cardlist += generatePlayerCard('Dibs', 27, 179);
+cardlist += generatePlayerCard('Kobe', 29, 190);
+cardlist += generatePlayerCard('E:U', 21, 166);
 
 // append those cards to the div
 cardDiv.innerHTML = cardlist;
@@ -102,7 +107,8 @@ mydiv.insertAdjacentElement('beforebegin', cardDiv);
 // select all the buttons!
 const buttons = document.querySelectorAll('.delete');
 // make out delete function
-function deleteButton(event) {
+function deleteButton(event)
+{
     console.log("Delete card TODO!!!");
     const Buttonthatgotclicked = event.currentTarget;
     //goes up one and deletes parents elements.

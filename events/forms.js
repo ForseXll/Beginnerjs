@@ -30,7 +30,7 @@ signup.addEventListener('submit', function (event)
     {
         alert("Wrong name");
     }
-    else if (agree)
+    else if (!agree)
     {
         alert("Do you agree to the terms?");
     }

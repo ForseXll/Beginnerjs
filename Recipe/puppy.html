@@ -25,9 +25,13 @@
             /* align-items: center; */
         }
 
-        .items.a {
-            /* justify-content: center; */
-            justify-content: end;
+        .search {
+            display: grid;
+            padding: 3px;
+        }
+
+        .inputs {
+            width: 100%;
         }
     </style>
 </head>
@@ -35,7 +39,7 @@
 <body>
     <div class="wrapper">
         <form class="search" autocomplete="off">
-            <input type="text" name="query" value="">
+            <input class="inputs" type="text" name="query" value="">
             <button name="submit" type="submit">Submit</button>
         </form>
         <div class="display"></div>

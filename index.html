@@ -4,12 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beginner JS ShowCase</title>
+    <title>Beginner JS Showcase</title>
+    <link rel="stylesheet" href="./base.css">
+    <style>
+        body {
+            display: grid;
+        }
+
+        .sites {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(200px, 1fr));
+            grid-gap: 20px;
+            padding: 1rem;
+        }
+
+        .site {
+            display: grid;
+            background-color: beige;
+            padding: 1em 1.5em;
+        }
+
+        .site>p {
+            align-items: flex-start;
+        }
+
+        .link {
+            text-align: center;
+            width: 100%;
+            height: 30px;
+            color: blue;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            background-color: #a2e2e7;
+        }
+
+        h1 {
+            margin: auto;
+            height: 10rem;
+            position: relative;
+            text-align: end;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Testing Html file</h1>
-    <a href="WebSpeech/speech.html"></a>
+    <h1 class="header">My JavaScript Course ShowCase</h1>
+    <div class="sites">
+        <div class="site">
+            <a class="link" href="WebSpeech/speech.html"> Speech Api </a>
+            <p>Using a Chrome speech API. Say a certain color and the animation will happen.</p>
+        </div>
+        <div class="site">
+            <a class="link" href="text/Text.html"> Text Conveter </a>
+            <p>A simple program that converts what you type to one of the three preprogramed choices.</p>
+            <p> Have fun!! </p>
+        </div>
+        <div class="site">
+            <a class="link" href="Slider/slider.html"> Slider </a>
+            <p> Slider, clicking the button goes to the next slide. Focus was on manipulatin classes and DOM
+                elements. </p>
+        </div>
+        <div class="site">
+            <a class="link" href="Recipe/puppy.html"> API Recipe </a>
+            <p> Targeting a simple API, "http://www.recipepuppy.com and pulling data
+                to create a list of items. Some have active recipes that you can link to. Type any ingridient into the
+                serrach bar.</p>
+        </div>
+        <div class="site">
+            <a class="link" href="Random Jokes/Jokes.html"> Random Dad Jokes </a>
+            <p> Pulling random dad joke from 'icanhazdadjoke.com' API. Every joke the button also changes. </p>
+        </div>
+        <div class="site">
+            <a class="link" href="Gallery/gallery.html"> Picture Gallery </a>
+            <p> Galleries that take input from mouse and keyboard which animate the modulo. </p>
+        </div>
+        <div class="site">
+            <a class="link" href="Facedetection/face.html"> Bluring Face Using API </a>
+            <p> Using face API to stream teh video ontu canvas and then finding a face and bluring it out. </p>
+        </div>
+        <div class="site">
+            <a class="link" href="Etch-a-sketch/sketch.html"> Canvas </a>
+            <p> Drawing on Canvas. </p>
+        </div>
+        <div class="site">
+            <a class="link" href="Currency-modules/Currency.html"> Curency Converter </a>
+            <p> Targeting a currency api to conversion information. Utilizing cache storage to increase the
+                speed of the coverter and make less fetch request to the API. </p>
+        </div>
+        <div class="site">
+            <a class="link" href="Click Outside/clicking.html"> Modulo </a>
+            <p> Just a Modulo Assignment </p>
+        </div>
+        <div class="site">
+            <a class="link" href="Async-typer/typer.html"> Auto Typer </a>
+            <p> The typer auto typeing. This assignemt was based on async await function. </p>
+        </div>
+        <div class="site">
+            <a class="link" href="DOM-Cardio/DOM-Cardio.html"> DOM Cardio </a>
+            <p> Assigment that focused on deleting elements and creating new one with JavaScript.</p>
+        </div>
+    </div>
 </body>
 
 </html>

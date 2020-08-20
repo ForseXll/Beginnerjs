@@ -78,7 +78,8 @@ function cleanup()
     //reset at a different location
     x = Math.floor(Math.random() * height);
     y = Math.floor(Math.random() * width);
-
+    // console.log(x, y);
+    context.beginPath();
 }
 
 window.addEventListener('keydown', handlekey);
