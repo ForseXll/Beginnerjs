@@ -21,7 +21,7 @@ function submitList(event)
     }
     items.push(item); //push items unto items object
     //console.log(item);
-    event.currentTarget.reset(); //clear all imputs
+    event.currentTarget.reset(); //clear all inputs
 
 
     //fire off custom event for update
@@ -60,7 +60,7 @@ function storageItemstoLocal()
 
 }
 
-//fucntion restore
+//function restore
 function restorefromStorage()
 {
     console.log('pulling from storage');
@@ -75,7 +75,7 @@ function restorefromStorage()
 }
 
 
-//delete fuinction
+//delete function
 function deleteItem(id)
 {
     console.log("item deleted", id);
@@ -89,7 +89,7 @@ function deleteItem(id)
 //use event delegation input[type="checkbox"]
 //add to html value to input value="item.id"
 //play around with id in delegation
-//find item in items usien find( input => input.id == id)
+//find item in items using find( input => input.id == id)
 //ref item to false
 //add checked attribute with if statement in input
 
@@ -109,7 +109,7 @@ shopping.addEventListener('submit', submitList);
 //event for our customs
 list.addEventListener('itemsUpdated', displayList);
 list.addEventListener('itemsUpdated', storageItemstoLocal);
-//event deligation
+//event delegation
 list.addEventListener('click', function (event)
 {
     if (event.target.matches('button'))
